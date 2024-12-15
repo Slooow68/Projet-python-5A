@@ -1,14 +1,23 @@
 import webbrowser
 from test_data_loader import get_rockets, get_engines, get_agencies
+from test_statistics import calculate_statistics, plot_agency_rocket_count, plot_top_rocket_by_launches, plot_top_rocket_by_payload
 
+"""
+Collect the data from the database
+"""
 rockets = get_rockets()
 engines = get_engines()
 agencies = get_agencies()
 
+"""
+Main menu 
+User can choose what he want to see between the rockets, engines, space agencies & some statistics from the database
+"""
 def show_main_menu():
     print("1. Voir la liste des fusées")
     print("2. Voir la liste des moteurs")
     print("3. Voir la liste des agences spatiales")
+    print("4. Voir les statistiques")
     print("5. Quitter")
     choice = input("Entrez votre choix : ")
     if choice == '1':
@@ -17,11 +26,19 @@ def show_main_menu():
         show_engines_list()
     elif choice == '3':
         show_agencies_list()
+    elif choice == '4':
+        show_statistics()
     elif choice == '5':
         exit()
     else:
         print("Choix invalide, réessayez.")
         show_main_menu()
+
+"""
+Show the rocket list (names)
+User can select a rocket to get more details about it
+
+"""
 
 def show_rockets_list():
     print("\nListe des fusées :")
@@ -38,6 +55,13 @@ def show_rockets_list():
             print("Choix invalide.")
             show_rockets_list()
 
+
+
+"""
+Show the rocket detail from the rockets.json data
+Name, engine, height, diameter, nb of stages, nb of launches, the creation date, still in activity ?, ergol type, payload mass
+The user can also choose to see the wikipedia website of the rocket. It will open it in his web browser
+"""
 def show_rocket_details(rocket):
     print(f"\nNom : {rocket['name']}")
     print(f"Moteur : {rocket['engine']}")
@@ -51,9 +75,14 @@ def show_rocket_details(rocket):
     print(f"Charge utile maximale : {rocket['payload_mass']}")
     redirect = input("\nVoulez-vous voir la page Wikipédia de cette fusée ? (oui/non) : ")
     if redirect.lower() == 'oui':
-        webbrowser.open(rocket['wikipedia_url'])
-    show_main_menu()
+        webbrowser.open(rocket['wikipedia_url']) #open the website in the user web browser
+    show_main_menu() #back to the main menu
 
+
+
+"""
+Show the engine list as the rocket list 
+"""
 def show_engines_list():
     print("\nListe des moteurs :")
     for i, engine in enumerate(engines, 1):
@@ -68,7 +97,15 @@ def show_engines_list():
         except (ValueError, IndexError):
             print("Choix invalide.")
             show_engines_list()
-        
+
+
+
+
+"""
+Show the engine details as the rocket details
+Name, associated rocket, thrust, can start multiple times ?, ergol type, height and cycle type
+User can choose to see the wikipedia website 
+"""
 def show_engine_details(engine):
     print(f"\nNom du moteur : {engine['name']}")
     print(f"Fusées associées : {', '.join(engine['rockets'])}")
@@ -82,6 +119,11 @@ def show_engine_details(engine):
         webbrowser.open(engine['wikipedia_url'])
     show_main_menu()
 
+
+
+"""
+Show the agencies list 
+"""
 def show_agencies_list():
     print("\nListe des agences spatiales :")
     for i, agency in enumerate(agencies, 1):
@@ -97,6 +139,13 @@ def show_agencies_list():
             print("Choix invalide.")
             show_agencies_list()
 
+
+
+"""
+Show the agency details as the rocket details
+Name, creation date, country,type (government or private), actual CEO
+User can choose to see the wikipedia website 
+"""
 def show_agency_details(agency):
     print(f"\nNom : {agency['name']}")
     print(f"Date de création : {agency['creation_date']}")
@@ -108,6 +157,31 @@ def show_agency_details(agency):
         webbrowser.open(agency['wikipedia_url'])
     show_main_menu()
 
+
+
+"""
+Showcase some statistics :
+nb of rockets, nb of engines, nb of agencies, nb of reusable engine, nb of no-reusable engines
+plot some statistics :
+- nb of rocket for each agencies
+"""
+def show_statistics():
+    stats = calculate_statistics(rockets, engines, agencies)
+    print("\n--- Statistiques ---")
+    print(f"Nombre de fusées : {stats['rocket_count']}")
+    print(f"Nombre de moteurs : {stats['engine_count']}")
+    print(f"Nombre d'agences spatiales : {stats['agency_count']}")
+    print(f"Moteurs réutilisables : {stats['reusable_engines']}")
+    print(f"Moteurs non réutilisables : {stats['non_reusable_engines']}")
+    plot_agency_rocket_count(rockets, agencies)
+    plot_top_rocket_by_launches(rockets)
+    plot_top_rocket_by_payload(rockets)
+    show_main_menu()
+
+
+"""
+Main programm 
+"""
 show_main_menu()
 
     
