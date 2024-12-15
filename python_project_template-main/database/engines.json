@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Merlin",
+        "rockets": ["Falcon 9", "Falcon Heavy"],
+        "thrust": "845 kN",
+        "reusable": true,
+        "propellant_type": "RP-1 / LOX",
+        "height": "2.7 m",
+        "cycle": "Open",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Merlin_(moteur-fus%C3%A9e)"
+    },
+    {
+        "name": "RS-68",
+        "rockets": ["Delta IV Heavy"],
+        "thrust": "680 kN",
+        "reusable": false,
+        "propellant_type": "LH2 / LOX",
+        "height": "2.8 m",
+        "cycle": "Open",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/RS-68"
+    }
+]

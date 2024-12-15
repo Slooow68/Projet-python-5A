@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Falcon 9",
+        "engine": "Merlin",
+        "agency": "SpaceX",
+        "height": "70 m",
+        "diameter": "3.7 m",
+        "stages": 2,
+        "launches": 200,
+        "creation_date": "2010-06-04",
+        "active": true,
+        "propellant_type": "RP-1 / LOX",
+        "payload_mass": "22,800 kg",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Falcon_9"
+    },
+    {
+        "name": "Delta IV Heavy",
+        "agency": "NASA",
+        "engine": "RS-68",
+        "height": "70 m",
+        "diameter": "5.1 m",
+        "stages": 3,
+        "launches": 30,
+        "creation_date": "2004-11-20",
+        "active": false,
+        "propellant_type": "LH2 / LOX",
+        "payload_mass": "28,790 kg",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Delta_IV_Heavy"
+    }
+]
