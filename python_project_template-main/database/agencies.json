@@ -1,0 +1,18 @@
+[
+    {
+        "name": "SpaceX",
+        "creation_date": "2002-03-14",
+        "country": "USA",
+        "type": "Private",
+        "ceo": "Elon Musk",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/SpaceX"
+    },
+    {
+        "name": "NASA",
+        "creation_date": "1958-07-29",
+        "country": "USA",
+        "type": "Government",
+        "ceo": "Bill Nelson",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/NASA"
+    }
+]
