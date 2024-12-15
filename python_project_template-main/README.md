@@ -37,17 +37,17 @@ The following Python libraries are required:
 **Steps**
 * Clone the repository:
 
-'''bash
+```
 
 git clone https://github.com/your-repo/space-data-visualization.git
 cd space-data-visualization
-'''
+```
 
 * Ensure the required dependencies are installed:
 
-'''bash
+```
 pip install matplotlib
-'''
+```
 * The database folder (database) must include three JSON files:
 
   - rockets.json — Data about rockets.
@@ -58,9 +58,9 @@ pip install matplotlib
 # How to Use
 **Run the main program:**
 
-'''bash
+``` 
 python main.py
-'''
+```
 
 * The terminal menu will appear with the following options:
 
@@ -74,7 +74,7 @@ python main.py
 * Choose "yes" when prompted to open the Wikipedia page of a selected rocket, engine, or agency in your default browser.
 
 Project Structure
-'''
+```
 
 space-data-visualization/
 ├── database/
@@ -93,7 +93,7 @@ space-data-visualization/
 ├── pyproject.toml             #useful infos about the project
 ├── Some projects setup files
 └── README.md                  # Project documentation
-'''
+```
 # Statistical Features
   * **Pie Chart:** Displays the distribution of rockets by their respective space agencies.
   * **Bar Charts:**
