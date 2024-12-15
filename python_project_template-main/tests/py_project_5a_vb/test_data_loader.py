@@ -8,8 +8,4 @@ def load_data(file_name):
 def get_rockets():
     return load_data('database/rockets.json')
 
-def get_engines():
-    return load_data('database/engines.json')
 
-def get_agencies():
-    return load_data('database/agencies.json')
