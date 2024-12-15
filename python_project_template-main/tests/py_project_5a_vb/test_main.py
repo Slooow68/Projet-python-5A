@@ -7,4 +7,16 @@ def show_rockets_list():
     for i, rocket in enumerate(rockets, 1):
         print(f"{i}. {rocket['name']}")
 
-show_rockets_list()
+def show_rocket_details(rocket):
+    print(f"\nNom : {rocket['name']}")
+    print(f"Moteur : {rocket['engine']}")
+    print(f"Hauteur : {rocket['height']}")
+    print(f"Diamètre : {rocket['diameter']}")
+    print(f"Nombre d'étages : {rocket['stages']}")
+    print(f"Nombre de lancements : {rocket['launches']}")
+    print(f"Date de création : {rocket['creation_date']}")
+    print(f"Active : {'Oui' if rocket['active'] else 'Non'}")
+    print(f"Type d'ergol : {rocket['propellant_type']}")
+    print(f"Charge utile maximale : {rocket['payload_mass']}")
+
+    
