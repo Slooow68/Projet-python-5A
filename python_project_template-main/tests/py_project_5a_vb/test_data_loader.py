@@ -23,9 +23,9 @@ def get_rockets():
     return load_data('rockets.json')
 
 def get_engines():
-    return load_data('database/engines.json')
+    return load_data('engines.json')
 
 def get_agencies():
-    return load_data('database/agencies.json')
+    return load_data('agencies.json')
 
 
