@@ -14,5 +14,69 @@
         "type": "Government",
         "ceo": "Bill Nelson",
         "wikipedia_url": "https://fr.wikipedia.org/wiki/NASA"
+    },
+    {
+        "name": "ESA (European Space Agency)",
+        "creation_date": "1975-05-30",
+        "country": "Europe",
+        "type": "Government",
+        "ceo": "Josef Aschbacher",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Agence_spatiale_europ%C3%A9enne"
+    },
+    {
+        "name": "CNES (Centre National d'Études Spatiales)",
+        "creation_date": "1961-12-19",
+        "country": "France",
+        "type": "Government",
+        "ceo": "Philippe Baptiste",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/CNES"
+    },
+    {
+        "name": "Roscosmos",
+        "creation_date": "1992-02-25",
+        "country": "Russia",
+        "type": "Government",
+        "ceo": "Yuri Borisov",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Roscosmos"
+    },
+    {
+        "name": "CNSA (China National Space Administration)",
+        "creation_date": "1993-04-01",
+        "country": "China",
+        "type": "Government",
+        "ceo": "Zhang Kejian",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/China_National_Space_Administration"
+    },
+    {
+        "name": "ISRO (Indian Space Research Organisation)",
+        "creation_date": "1969-08-15",
+        "country": "India",
+        "type": "Government",
+        "ceo": "S. Somanath",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/ISRO"
+    },
+    {
+        "name": "JAXA (Japan Aerospace Exploration Agency)",
+        "creation_date": "2003-10-01",
+        "country": "Japan",
+        "type": "Government",
+        "ceo": "Hiroshi Yamakawa",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/JAXA"
+    },
+    {
+        "name": "Blue Origin",
+        "creation_date": "2000-09-08",
+        "country": "USA",
+        "type": "Private",
+        "ceo": "Jeff Bezos",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Blue_Origin"
+    },
+    {
+        "name": "Northrop Grumman Innovation Systems",
+        "creation_date": "1939-12-06",
+        "country": "USA",
+        "type": "Private",
+        "ceo": "Kathy Warden",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Northrop_Grumman"
     }
 ]

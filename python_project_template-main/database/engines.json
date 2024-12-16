@@ -18,5 +18,105 @@
         "height": "2.8 m",
         "cycle": "Open",
         "wikipedia_url": "https://fr.wikipedia.org/wiki/RS-68"
+    },
+    {
+        "name": "Vulcain 2",
+        "rockets": ["Ariane 5"],
+        "thrust": "1,380 kN",
+        "reusable": false,
+        "propellant_type": "LH2 / LOX",
+        "height": "3 m",
+        "cycle": "Gas Generator",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Vulcain_(moteur-fus%C3%A9e)"
+    },
+    {
+        "name": "P120C",
+        "rockets": ["Vega-C"],
+        "thrust": "4,500 kN",
+        "reusable": false,
+        "propellant_type": "Solid Fuel",
+        "height": "11.7 m",
+        "cycle": "Solid Propellant",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/P120C"
+    },
+    {
+        "name": "YF-100",
+        "rockets": ["Long March 5"],
+        "thrust": "1,200 kN",
+        "reusable": false,
+        "propellant_type": "RP-1 / LOX",
+        "height": "3 m",
+        "cycle": "Gas Generator",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/YF-100"
+    },
+    {
+        "name": "YF-73",
+        "rockets": ["Long March 3B"],
+        "thrust": "78.45 kN",
+        "reusable": false,
+        "propellant_type": "LH2 / LOX",
+        "height": "2.1 m",
+        "cycle": "Expander",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/YF-73"
+    },
+    {
+        "name": "LE-7A",
+        "rockets": ["H-IIA"],
+        "thrust": "1,098 kN",
+        "reusable": false,
+        "propellant_type": "LH2 / LOX",
+        "height": "3.4 m",
+        "cycle": "Staged Combustion",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/LE-7"
+    },
+    {
+        "name": "CE-20",
+        "rockets": ["GSLV Mk III"],
+        "thrust": "200 kN",
+        "reusable": false,
+        "propellant_type": "LH2 / LOX",
+        "height": "2.8 m",
+        "cycle": "Staged Combustion",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/CE-20"
+    },
+    {
+        "name": "Vulcain 2.1",
+        "rockets": ["Ariane 6"],
+        "thrust": "1,370 kN",
+        "reusable": false,
+        "propellant_type": "LH2 / LOX",
+        "height": "3.3 m",
+        "cycle": "Gas Generator",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Vulcain_(moteur-fus%C3%A9e)"
+    },
+    {
+        "name": "Raptor",
+        "rockets": ["Starship"],
+        "thrust": "2,300 kN",
+        "reusable": true,
+        "propellant_type": "CH4 / LOX",
+        "height": "3.1 m",
+        "cycle": "Full-Flow Staged Combustion",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Raptor_(moteur-fus%C3%A9e)"
+    },
+    {
+        "name": "F-1",
+        "rockets": ["Saturn V"],
+        "thrust": "6,770 kN",
+        "reusable": false,
+        "propellant_type": "RP-1 / LOX",
+        "height": "5.6 m",
+        "cycle": "Gas Generator",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/F-1_(rocket_engine)"
+    },
+    {
+        "name": "Rutherford",
+        "rockets": ["Electron"],
+        "thrust": "25 kN",
+        "reusable": false,
+        "propellant_type": "RP-1 / LOX",
+        "height": "0.4 m",
+        "cycle": "Electric Pump-Fed",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Rutherford_(rocket_engine)"
     }
 ]
