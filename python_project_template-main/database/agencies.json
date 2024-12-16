@@ -16,20 +16,12 @@
         "wikipedia_url": "https://fr.wikipedia.org/wiki/NASA"
     },
     {
-        "name": "ESA (European Space Agency)",
+        "name": "ESA",
         "creation_date": "1975-05-30",
         "country": "Europe",
         "type": "Government",
         "ceo": "Josef Aschbacher",
         "wikipedia_url": "https://fr.wikipedia.org/wiki/Agence_spatiale_europ%C3%A9enne"
-    },
-    {
-        "name": "CNES (Centre National d'Études Spatiales)",
-        "creation_date": "1961-12-19",
-        "country": "France",
-        "type": "Government",
-        "ceo": "Philippe Baptiste",
-        "wikipedia_url": "https://fr.wikipedia.org/wiki/CNES"
     },
     {
         "name": "Roscosmos",
@@ -40,7 +32,7 @@
         "wikipedia_url": "https://fr.wikipedia.org/wiki/Roscosmos"
     },
     {
-        "name": "CNSA (China National Space Administration)",
+        "name": "CNSA",
         "creation_date": "1993-04-01",
         "country": "China",
         "type": "Government",
@@ -48,7 +40,7 @@
         "wikipedia_url": "https://fr.wikipedia.org/wiki/China_National_Space_Administration"
     },
     {
-        "name": "ISRO (Indian Space Research Organisation)",
+        "name": "ISRO",
         "creation_date": "1969-08-15",
         "country": "India",
         "type": "Government",
@@ -56,7 +48,7 @@
         "wikipedia_url": "https://fr.wikipedia.org/wiki/ISRO"
     },
     {
-        "name": "JAXA (Japan Aerospace Exploration Agency)",
+        "name": "JAXA",
         "creation_date": "2003-10-01",
         "country": "Japan",
         "type": "Government",
@@ -72,11 +64,19 @@
         "wikipedia_url": "https://fr.wikipedia.org/wiki/Blue_Origin"
     },
     {
-        "name": "Northrop Grumman Innovation Systems",
-        "creation_date": "1939-12-06",
+        "name": "ULA",
+        "creation_date": "2006-12-01",
         "country": "USA",
         "type": "Private",
-        "ceo": "Kathy Warden",
-        "wikipedia_url": "https://fr.wikipedia.org/wiki/Northrop_Grumman"
+        "ceo": "Tori Bruno",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/United_Launch_Alliance"
+    },
+    {
+        "name": "Rocket Lab",
+        "creation_date": "2006-07-05",
+        "country": "USA/New Zealand",
+        "type": "Private",
+        "ceo": "Peter Beck",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Rocket_Lab"
     }
 ]

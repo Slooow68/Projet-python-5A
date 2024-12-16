@@ -1,4 +1,5 @@
 import webbrowser
+import matplotlib.pyplot as plt
 from test_data_loader import get_rockets, get_engines, get_agencies
 from test_statistics import calculate_statistics, plot_agency_rocket_count, plot_top_rocket_by_launches, plot_top_rocket_by_payload
 
@@ -165,6 +166,7 @@ nb of rockets, nb of engines, nb of agencies, nb of reusable engine, nb of no-re
 plot some statistics :
 - nb of rocket for each agencies
 """
+
 def show_statistics():
     stats = calculate_statistics(rockets, engines, agencies)
     print("\n--- Statistiques ---")
@@ -173,9 +175,17 @@ def show_statistics():
     print(f"Nombre d'agences spatiales : {stats['agency_count']}")
     print(f"Moteurs réutilisables : {stats['reusable_engines']}")
     print(f"Moteurs non réutilisables : {stats['non_reusable_engines']}")
-    plot_agency_rocket_count(rockets, agencies)
-    plot_top_rocket_by_launches(rockets)
-    plot_top_rocket_by_payload(rockets)
+
+    # Créer des sous-graphes pour afficher plusieurs graphiques dans une seule figure
+    fig, axes = plt.subplots(1, 3, figsize=(18, 6))
+
+    # Placer chaque graphique sur un sous-graphique distinct
+    plot_agency_rocket_count(rockets, agencies, axes[0])
+    plot_top_rocket_by_launches(rockets, axes[1])
+    plot_top_rocket_by_payload(rockets, axes[2])
+
+    plt.tight_layout()  # Pour ajuster l'espacement entre les graphiques
+    plt.show()  # Afficher la figure avec tous les graphiques
     show_main_menu()
 
 

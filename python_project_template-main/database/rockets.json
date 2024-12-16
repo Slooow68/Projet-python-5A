@@ -194,5 +194,31 @@
         "propellant_type": "RP-1 / LOX",
         "payload_mass": "300 kg",
         "wikipedia_url": "https://fr.wikipedia.org/wiki/Electron_(rocket)"
+    },
+    {
+        "name": "Soyuz 2",
+        "agency": "Roscosmos",
+        "engine": "RD-107A",
+        "height": "46 m",
+        "diameter": "2.95 m",
+        "stages": 3,
+        "launches": 200,
+        "active": true,
+        "propellant_type": "RP-1 / LOX",
+        "payload_mass": "7,800 kg",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/Soyouz_2"
+    },
+    {
+        "name": "New Shepard",
+        "agency": "Blue Origin",
+        "engine": "BE-3",
+        "height": "18.3 m",
+        "diameter": "1.9 m",
+        "stages": 2,
+        "launches": 15,
+        "active": true,
+        "propellant_type": "LH2 / LOX",
+        "payload_mass": "500 kg",
+        "wikipedia_url": "https://fr.wikipedia.org/wiki/New_Shepard"
     }
 ]
